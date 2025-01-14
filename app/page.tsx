@@ -48,7 +48,7 @@ const page = () => {
             <div className="mt-8 sm:mt-10 w-full flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8">
               
 
-              <a href="/contact">
+              <a href="/about">
                 <button className="w-max shadow-[inset_0_0_0_2px_white] text-white px-12 sm:px-8 sm:w-max py-3 sm:py-4 rounded-full tracking-widest uppercase text-xs sm:text-sm font-bold bg-transparent transition duration-200 hover:bg-white hover:text-black">
 
                  About Us
@@ -127,46 +127,7 @@ const page = () => {
             </a>
           </motion.div>
 
-          {/* <div className="relative mt-12 sm:mt-16">
-            <motion.span
-              initial={{
-                opacity: 0
-              }}
-              whileInView={{
-                opacity: 1
-              }}
-              viewport={{
-                once: true
-              }}
-              transition={{
-                duration: 0.7,
-                ease: "easeInOut"
-              }}
-            >
-              <Image
-                src="/assets/guy1.png"
-                alt="Services img"
-                width={500}
-                height={500}
-                className="hidden sm:block w-full max-w-[300px] sm:max-w-[400px] lg:max-w-[500px] h-auto mx-auto"
-              /></motion.span>
-
-            <Image
-              src="/assets/doodle-1.svg"
-              alt="Services decoration"
-              width={500}
-              height={500}
-              className="hidden sm:block absolute h-60 w-60 lg:h-80 lg:w-80 left-0 top-1/2 transform -translate-y-1/2 -translate-x-1/4 lg:translate-x-0 filter blur-[3px]"
-            />
-
-            <Image
-              src="/assets/doodle-2.svg"
-              alt="Services decoration"
-              width={500}
-              height={500}
-              className="hidden sm:block absolute h-60 w-60 lg:h-80 lg:w-80 right-0 top-0 transform translate-x-1/4 lg:translate-x-0 -translate-y-1/4"
-            />
-          </div> */}
+       
 
         </div>
       </section>
