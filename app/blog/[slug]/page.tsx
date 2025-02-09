@@ -1,34 +1,21 @@
 import { notFound } from "next/navigation";
 
-type BlogDetailProps = {
+interface BlogDetailProps {
   params: { slug: string };
-};
+}
 
 const blogPosts = [
-  {
-    slug: "essential-tax-tips",
-    title: "5 Essential Tax Tips for Small Businesses",
-    content: "Full content for 5 Essential Tax Tips for Small Businesses...",
-    image: "/img1.jpg",
-  },
-  {
-    slug: "bookkeeping-best-practices",
-    title: "Bookkeeping Best Practices for Startups",
-    content: "Full content for Bookkeeping Best Practices for Startups...",
-    image: "/img1.jpg",
-  },
-  {
-    slug: "new-tax-law-2024",
-    title: "New Tax Law Changes You Should Know in 2024",
-    content: "Full content for New Tax Law Changes You Should Know in 2024...",
-    image: "/img1.jpg",
-  },
+  { slug: "essential-tax-tips", title: "5 Essential Tax Tips", content: "Full content...", image: "/img1.jpg" },
+  { slug: "bookkeeping-best-practices", title: "Bookkeeping Best Practices", content: "Full content...", image: "/img2.jpg" },
+  { slug: "new-tax-law-2024", title: "New Tax Law Changes", content: "Full content...", image: "/img3.jpg" },
 ];
 
-export default function BlogDetail({ params }: BlogDetailProps) {
-  const blog = blogPosts.find((post) => post.slug === params.slug);
+// ✅ Ensure `params` is handled correctly
+export default async function BlogDetail({ params }: BlogDetailProps) {
+  if (!params?.slug) return notFound(); // Ensure slug exists
 
-  if (!blog) return notFound(); // Show 404 page if blog is not found
+  const blog = blogPosts.find((post) => post.slug === params.slug);
+  if (!blog) return notFound();
 
   return (
     <section className="py-16 px-6 bg-white">
@@ -42,4 +29,11 @@ export default function BlogDetail({ params }: BlogDetailProps) {
       </div>
     </section>
   );
+}
+
+// ✅ Add generateStaticParams (if using Static Site Generation)
+export async function generateStaticParams() {
+  return blogPosts.map((post) => ({
+    slug: post.slug,
+  }));
 }
