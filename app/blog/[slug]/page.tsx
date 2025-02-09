@@ -1,5 +1,9 @@
 import { notFound } from "next/navigation";
 
+type BlogDetailProps = {
+  params: { slug: string };
+};
+
 const blogPosts = [
   {
     slug: "essential-tax-tips",
@@ -21,10 +25,10 @@ const blogPosts = [
   },
 ];
 
-export default function BlogDetail({ params }: { params: { slug: string } }) {
+export default function BlogDetail({ params }: BlogDetailProps) {
   const blog = blogPosts.find((post) => post.slug === params.slug);
 
-  if (!blog) return notFound(); 
+  if (!blog) return notFound(); // Show 404 page if blog is not found
 
   return (
     <section className="py-16 px-6 bg-white">
