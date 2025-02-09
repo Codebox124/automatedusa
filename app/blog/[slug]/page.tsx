@@ -1,34 +1,41 @@
-import { notFound } from "next/navigation";
+// import { notFound } from "next/navigation";
 
-interface BlogDetailProps {
-  params: { slug: string };
-}
+// interface BlogDetailProps {
+//   params: { slug: string };
+// }
 
-// ✅ Ensure this function is NOT async
-export default function BlogDetail({ params }: BlogDetailProps) {
-  const { slug } = params;
+// // ✅ Ensure this function is NOT async
+// export default function BlogDetail({ params }: BlogDetailProps) {
+//   const { slug } = params;
 
-  if (!slug) return notFound();
+//   if (!slug) return notFound();
 
-  const blogPosts = [
-    { slug: "essential-tax-tips", title: "5 Essential Tax Tips", content: "Full content...", image: "/img1.jpg" },
-    { slug: "bookkeeping-best-practices", title: "Bookkeeping Best Practices", content: "Full content...", image: "/img2.jpg" },
-    { slug: "new-tax-law-2024", title: "New Tax Law Changes", content: "Full content...", image: "/img1.jpg" },
-  ];
+//   const blogPosts = [
+//     { slug: "essential-tax-tips", title: "5 Essential Tax Tips", content: "Full content...", image: "/img1.jpg" },
+//     { slug: "bookkeeping-best-practices", title: "Bookkeeping Best Practices", content: "Full content...", image: "/img2.jpg" },
+//     { slug: "new-tax-law-2024", title: "New Tax Law Changes", content: "Full content...", image: "/img1.jpg" },
+//   ];
 
-  const blog = blogPosts.find((post) => post.slug === slug);
-  if (!blog) return notFound();
+//   const blog = blogPosts.find((post) => post.slug === slug);
+//   if (!blog) return notFound();
 
+//   return (
+//     <section className="py-16 px-6 bg-white">
+//       <div className="max-w-4xl mx-auto">
+//         <img src={blog.image} alt={blog.title} className="w-full h-64 object-cover rounded-lg" />
+//         <h1 className="text-3xl font-bold text-green-900 mt-6">{blog.title}</h1>
+//         <p className="text-gray-700 mt-4">{blog.content}</p>
+//         <a href="/blog" className="mt-6 inline-block bg-green-700 text-white px-6 py-2 rounded-lg">
+//           Back to Blog
+//         </a>
+//       </div>
+//     </section>
+//   );
+// }
+import React from 'react'
+
+export default function BlogDetail() {
   return (
-    <section className="py-16 px-6 bg-white">
-      <div className="max-w-4xl mx-auto">
-        <img src={blog.image} alt={blog.title} className="w-full h-64 object-cover rounded-lg" />
-        <h1 className="text-3xl font-bold text-green-900 mt-6">{blog.title}</h1>
-        <p className="text-gray-700 mt-4">{blog.content}</p>
-        <a href="/blog" className="mt-6 inline-block bg-green-700 text-white px-6 py-2 rounded-lg">
-          Back to Blog
-        </a>
-      </div>
-    </section>
-  );
+    <div>page</div>
+  )
 }
