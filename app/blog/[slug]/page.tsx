@@ -4,6 +4,7 @@ interface BlogDetailProps {
   params: { slug: string };
 }
 
+// ✅ Ensure this function is NOT async
 export default function BlogDetail({ params }: BlogDetailProps) {
   const { slug } = params;
 
@@ -11,7 +12,7 @@ export default function BlogDetail({ params }: BlogDetailProps) {
 
   const blogPosts = [
     { slug: "essential-tax-tips", title: "5 Essential Tax Tips", content: "Full content...", image: "/img1.jpg" },
-    { slug: "bookkeeping-best-practices", title: "Bookkeeping Best Practices", content: "Full content...", image: "/img1.jpg" },
+    { slug: "bookkeeping-best-practices", title: "Bookkeeping Best Practices", content: "Full content...", image: "/img2.jpg" },
     { slug: "new-tax-law-2024", title: "New Tax Law Changes", content: "Full content...", image: "/img1.jpg" },
   ];
 
