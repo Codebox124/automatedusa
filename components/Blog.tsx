@@ -40,7 +40,7 @@ export default function BlogResources() {
               <span className="text-sm uppercase text-green-700 font-semibold">{post.category}</span>
               <h3 className="text-xl font-bold text-green-900 mt-2">{post.title}</h3>
               <p className="text-gray-600 mt-2">{post.description}</p>
-              <a href="#" className="text-green-700 font-medium mt-4 inline-block">
+              <a href="/blog" className="text-green-700 font-medium mt-4 inline-block">
                 Read More →
               </a>
             </div>

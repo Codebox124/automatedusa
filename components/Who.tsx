@@ -20,7 +20,7 @@ export default function AboutSection() {
           <p className="text-gray-600 mt-2">
             We ensure compliance with tax regulations and help businesses optimize their tax strategies.
           </p>
-          <a href="#" className="text-green-700 font-medium mt-4 inline-block">
+          <a href="/services" className="text-green-700 font-medium mt-4 inline-block">
             Learn more &raquo;
           </a>
         </div>
@@ -32,7 +32,7 @@ export default function AboutSection() {
           <p className="text-gray-600 mt-2">
             We manage financial records, transactions, and ensure accurate financial reporting.
           </p>
-          <a href="#" className="text-green-700 font-medium mt-4 inline-block">
+          <a href="/services" className="text-green-700 font-medium mt-4 inline-block">
             Learn more &raquo;
           </a>
         </div>
@@ -44,7 +44,7 @@ export default function AboutSection() {
           <p className="text-gray-600 mt-2">
             We integrate financial software, accounting tools, and tax solutions seamlessly.
           </p>
-          <a href="#" className="text-green-700 font-medium mt-4 inline-block">
+          <a href="/services" className="text-green-700 font-medium mt-4 inline-block">
             Learn more &raquo;
           </a>
         </div>
@@ -56,7 +56,7 @@ export default function AboutSection() {
           <p className="text-gray-600 mt-2">
             We provide expert advice to help businesses improve operations, finance, and growth.
           </p>
-          <a href="#" className="text-green-700 font-medium mt-4 inline-block">
+          <a href="/services" className="text-green-700 font-medium mt-4 inline-block">
             Learn more &raquo;
           </a>
         </div>
