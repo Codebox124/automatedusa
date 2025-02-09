@@ -4,17 +4,18 @@ interface BlogDetailProps {
   params: { slug: string };
 }
 
-const blogPosts = [
-  { slug: "essential-tax-tips", title: "5 Essential Tax Tips", content: "Full content...", image: "/img1.jpg" },
-  { slug: "bookkeeping-best-practices", title: "Bookkeeping Best Practices", content: "Full content...", image: "/img2.jpg" },
-  { slug: "new-tax-law-2024", title: "New Tax Law Changes", content: "Full content...", image: "/img3.jpg" },
-];
+export default function BlogDetail({ params }: BlogDetailProps) {
+  const { slug } = params;
 
-// ✅ Ensure `params` is handled correctly
-export default async function BlogDetail({ params }: BlogDetailProps) {
-  if (!params?.slug) return notFound(); // Ensure slug exists
+  if (!slug) return notFound();
 
-  const blog = blogPosts.find((post) => post.slug === params.slug);
+  const blogPosts = [
+    { slug: "essential-tax-tips", title: "5 Essential Tax Tips", content: "Full content...", image: "/img1.jpg" },
+    { slug: "bookkeeping-best-practices", title: "Bookkeeping Best Practices", content: "Full content...", image: "/img1.jpg" },
+    { slug: "new-tax-law-2024", title: "New Tax Law Changes", content: "Full content...", image: "/img1.jpg" },
+  ];
+
+  const blog = blogPosts.find((post) => post.slug === slug);
   if (!blog) return notFound();
 
   return (
@@ -29,11 +30,4 @@ export default async function BlogDetail({ params }: BlogDetailProps) {
       </div>
     </section>
   );
-}
-
-// ✅ Add generateStaticParams (if using Static Site Generation)
-export async function generateStaticParams() {
-  return blogPosts.map((post) => ({
-    slug: post.slug,
-  }));
 }
