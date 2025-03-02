@@ -6,7 +6,7 @@ export default function Hero() {
 
    
     return (
-        <section className="bg-green-50 flex items-center justify-center  py-16 px-6">
+        <section className="bg-green-50 flex items-center justify-center  pt-16 px-6">
             <div className="max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 {/* Left Content */}
                 <div className="text-left max-w-lg space-y-6">
@@ -38,7 +38,7 @@ export default function Hero() {
 
                     <div className="relative">
                         
-                        <Image src="/hero.jpg" alt="Tax Consultant" width={600} height={600} className="rounded-lg" />
+                        <Image src="/image.png" alt="Tax Consultant" width={600} height={600} className="rounded-lg" />
 
                     </div>
 
