@@ -18,8 +18,10 @@ export default function Header() {
                 {/* Navigation */}
                 <nav className="hidden md:flex space-x-6 text-gray-700 font-medium">
                     <a href="/services">Services</a>
-                    <a href="/contact">Contact Us</a>
                     <a href="/blog">Blogs</a>
+                    <a href="/location">Location</a>
+                    <a href="/contact">Contact Us</a>
+                   
                 </nav>
 
                 {/* Hamburger Icon for Mobile */}
@@ -43,8 +45,11 @@ export default function Header() {
                 <div className="md:hidden bg-green-50 p-4 absolute top-16 left-0 right-0 shadow-lg">
                     <nav className="space-y-4 text-gray-700 font-medium">
                         <a href="/services" className="block">Services</a>
-                        <a href="/contact" className="block">Contact Us</a>
                         <a href="/blog" className="block">Blogs</a>
+                        <a href="/location">Location</a>
+                        <a href="/contact" className="block">Contact Us</a>
+                        
+                        
                         <a
                             href="#"
                             className="bg-black text-white px-4 block  py-2 rounded-md  hover:bg-gray-800 transition"

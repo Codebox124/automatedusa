@@ -36,16 +36,7 @@ export default function AboutUs() {
         </p>
       </div>
 
-      {/* Team Members */}
-      <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-        {teamMembers.map((member, index) => (
-          <div key={index} className="bg-white border rounded-lg shadow-md text-center p-6">
-            <img src={member.image} alt={member.name} className="w-24 h-24 rounded-full mx-auto" />
-            <h4 className="text-xl font-semibold text-green-900 mt-4">{member.name}</h4>
-            <p className="text-gray-600">{member.role}</p>
-          </div>
-        ))}
-      </div>
+     
     </section>
   );
 }
