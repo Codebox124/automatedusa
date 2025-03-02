@@ -1,22 +1,10 @@
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 export default function Hero() {
-    const images = [
-        "/heroImg1.jpg",
-        "/heroImg2.jpg",
-        "/heroImg3.jpg",
-    ];
+ 
 
-    const [currentImage, setCurrentImage] = useState(0);
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentImage((prev) => (prev + 1) % images.length);
-        }, 3000); // Change every 3 seconds
-
-        return () => clearInterval(interval);
-    }, []);
+   
     return (
         <section className="bg-green-50 flex items-center justify-center  py-16 px-6">
             <div className="max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -57,7 +45,7 @@ export default function Hero() {
                     </div> */}
 
                     <div className="relative">
-                        <div className="absolute -z-10 top-4 left-4 bg-yellow-300 w-72 h-72 rounded-full"></div>
+                        
                         <Image src="/heroImg2.jpg" alt="Tax Consultant" width={600} height={600} className="rounded-lg" />
 
                     </div>
