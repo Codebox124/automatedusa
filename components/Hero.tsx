@@ -30,29 +30,19 @@ export default function Hero() {
 
                 {/* Right Image */}
                 <div className="relative flex justify-center">
-                    {/* Background Decorative Circles */}
+                
                     <div className="absolute -top-6 -left-6 w-20 h-20 bg-yellow-300 rounded-full flex items-center justify-center">
                         <span className="text-xl">⚖️</span>
                     </div>
 
-                    {/* <div className="relative w-72 h-72 overflow-hidden rounded-lg shadow-lg">
-                        <div
-                            className="w-full h-full bg-cover bg-center transition-opacity duration-1000"
-                            style={{
-                                backgroundImage: `url(${images[currentImage]})`,
-                            }}
-                        ></div>
-                    </div> */}
 
                     <div className="relative">
                         
-                        <Image src="/heroImg2.jpg" alt="Tax Consultant" width={600} height={600} className="rounded-lg" />
+                        <Image src="/hero.jpg" alt="Tax Consultant" width={600} height={600} className="rounded-lg" />
 
                     </div>
 
-                    <div className="absolute bottom-0 right-0 w-10 h-10 bg-yellow-300 rounded-full flex items-center justify-center">
-                        <span className="text-xl">📊</span>
-                    </div>
+                    
                 </div>
             </div>
         </section>
