@@ -14,11 +14,11 @@ export default function ContactSupport() {
             <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 <div className="bg-gray-100 p-6 rounded-lg text-center">
                     <h4 className="text-lg font-semibold text-green-900">Email Us</h4>
-                    <p className="text-gray-700">support@yourcompany.com</p>
+                    <p className="text-gray-700">admin@automatedtaxusa.com</p>
                 </div>
                 <div className="bg-gray-100 p-6 rounded-lg text-center">
                     <h4 className="text-lg font-semibold text-green-900">Call Us</h4>
-                    <p className="text-gray-700">+14693300423</p>
+                    <p className="text-gray-700">+1 469 682 5590</p>
                 </div>
                 <div className="bg-gray-100 p-6 rounded-lg text-center">
                     <h4 className="text-lg font-semibold text-green-900">Live Chat</h4>

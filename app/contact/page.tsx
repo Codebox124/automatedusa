@@ -11,11 +11,11 @@ export default function ContactSupportPage() {
             </div>
 
             {/* Contact Information */}
-            <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
                 {[
-                    { title: "Email Us", detail: "support@yourcompany.com" },
-                    { title: "Call Us", detail: "+1 469 330 0423" },
-                    { title: "Live Chat", detail: "Chat with an agent 24/7" },
+                    { title: "Email Us", detail: "admin@automatedtaxusa.com" },
+                    { title: "Call Us", detail: "+1 469 682 5590" },
+                    // { title: "Live Chat", detail: "Chat with an agent 24/7" },
                 ].map((item, index) => (
                     <div key={index} className="bg-gray-100 p-6 rounded-lg text-center shadow-md">
                         <h4 className="text-lg font-semibold text-green-900">{item.title}</h4>

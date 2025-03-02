@@ -46,8 +46,8 @@ export default function Footer() {
             <a href="#" className="hover:text-gray-400"><FaLinkedinIn /></a>
             <a href="#" className="hover:text-gray-400"><FaInstagram /></a>
           </div>
-          <p className="mt-4 text-gray-300">📧 support@yourcompany.com</p>
-          <p className="text-gray-300">📞 +1 (555) 123-4567</p>
+          <p className="mt-4 text-gray-300">📧 admin@automatedtaxusa.com</p>
+          <p className="text-gray-300">📞 +1 469 682 5590</p>
         </div>
       </div>
 
