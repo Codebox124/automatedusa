@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { useEffect, useState } from "react";
 
 export default function Hero() {
@@ -57,11 +58,8 @@ export default function Hero() {
 
                     <div className="relative">
                         <div className="absolute -z-10 top-4 left-4 bg-yellow-300 w-72 h-72 rounded-full"></div>
-                        <img
-                            src="/heroImg2.jpg"
-                            alt="Tax Consultant"
-                            className="rounded-lg shadow-lg"
-                        />
+                        <Image src="/heroImg2.jpg" alt="Tax Consultant" width={600} height={600} className="rounded-lg" />
+
                     </div>
 
                     <div className="absolute bottom-0 right-0 w-10 h-10 bg-yellow-300 rounded-full flex items-center justify-center">
